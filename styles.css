@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.divButton {
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.bookCard {
+  width: 15%;
+  height: 30%;
+  background-color: #89CFF0;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: 18px;
+}
+
+.clearButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-100%);
+  border: none;
+  background: none;
+  padding: 0px;
+  color: red;
+  font-size: 25px;
+}
+
+.popup {
+  text-align: center;
+  padding: 50px 20px 20px 20px;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #90EE90;
+  width: 15%;
+  height: 30%;
+  border-radius: 10px;
+  display: none;
+}
+
+.popup--active {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+}
+
+.overlay--active {
+  display: block;
+}
